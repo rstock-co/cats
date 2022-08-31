@@ -5,11 +5,8 @@ const catBreeds = {
 };
 
 // synchronous function to fetch a cat breed
-const breedDetails = function(breed) {
-  // can simply return it (easy peezee, butter squeezy) ...
-  return catBreeds[breed];
-};
+// can simply return it (easy peezee, butter squeezy) ...
+const breedDetails = breed => catBreeds[breed];
 
-// get the return value right away from the function
-const bombay = breedDetails('Bombay');
-console.log(bombay); //=> prints out the description for that breed
+// log the breed details from the function
+console.log(breedDetails('Bombay'));
