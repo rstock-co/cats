@@ -10,3 +10,7 @@ const breedDetails = breed => catBreeds[breed];
 
 // log the breed details from the function
 console.log(breedDetails('Bombay'));
+
+// exports
+
+module.exports = breedDetails;
